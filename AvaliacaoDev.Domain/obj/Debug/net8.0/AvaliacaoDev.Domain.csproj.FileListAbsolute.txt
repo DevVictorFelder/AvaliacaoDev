@@ -1,0 +1,12 @@
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Domain\bin\Debug\net8.0\AvaliacaoDev.Domain.deps.json
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Domain\bin\Debug\net8.0\AvaliacaoDev.Domain.dll
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Domain\bin\Debug\net8.0\AvaliacaoDev.Domain.pdb
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Domain\obj\Debug\net8.0\AvaliacaoDev.Domain.csproj.AssemblyReference.cache
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Domain\obj\Debug\net8.0\AvaliacaoDev.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Domain\obj\Debug\net8.0\AvaliacaoDev.Domain.AssemblyInfoInputs.cache
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Domain\obj\Debug\net8.0\AvaliacaoDev.Domain.AssemblyInfo.cs
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Domain\obj\Debug\net8.0\AvaliacaoDev.Domain.csproj.CoreCompileInputs.cache
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Domain\obj\Debug\net8.0\AvaliacaoDev.Domain.dll
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Domain\obj\Debug\net8.0\refint\AvaliacaoDev.Domain.dll
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Domain\obj\Debug\net8.0\AvaliacaoDev.Domain.pdb
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Domain\obj\Debug\net8.0\ref\AvaliacaoDev.Domain.dll

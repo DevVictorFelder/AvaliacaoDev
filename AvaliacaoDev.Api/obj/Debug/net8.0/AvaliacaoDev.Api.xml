@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AvaliacaoDev.Api</name>
+    </assembly>
+    <members>
+        <member name="T:AvaliacaoDev.Api.Controllers.ClienteController">
+            <summary>
+            Controller para gerenciamento de clientes via API REST.
+            Expõe endpoints para operações CRUD de clientes.
+            </summary>
+        </member>
+        <member name="M:AvaliacaoDev.Api.Controllers.ClienteController.#ctor(AvaliacaoDev.Application.Interfaces.IClienteService)">
+            <summary>
+            Construtor do controller com injeção de dependência
+            </summary>
+            <param name="service">Serviço de gerenciamento de clientes</param>
+        </member>
+        <member name="M:AvaliacaoDev.Api.Controllers.ClienteController.Criar(AvaliacaoDev.Application.DTOs.ClienteDto)">
+            <summary>
+            Cria um novo cliente no sistema
+            </summary>
+            <param name="dto">Dados do cliente a ser criado</param>
+            <returns>ID do cliente criado</returns>
+            <response code="200">Cliente criado com sucesso</response>
+            <response code="400">Dados inválidos</response>
+            <response code="500">Erro interno</response>
+        </member>
+        <member name="M:AvaliacaoDev.Api.Controllers.ClienteController.Obter(System.Guid)">
+            <summary>
+            Obtém um cliente específico pelo ID
+            </summary>
+            <param name="id">ID do cliente</param>
+            <returns>Dados completos do cliente</returns>
+            <response code="200">Cliente encontrado</response>
+            <response code="404">Cliente não encontrado</response>
+            <response code="500">Erro interno</response>
+        </member>
+        <member name="M:AvaliacaoDev.Api.Controllers.ClienteController.Listar(System.Int32,System.Int32)">
+            <summary>
+            Lista todos os clientes cadastrados
+            </summary>
+            <param name="page">Número da página (padrão: 1)</param>
+            <param name="pageSize">Tamanho da página (padrão: 10)</param>
+            <returns>Lista de clientes paginada</returns>
+            <response code="200">Lista de clientes retornada com sucesso</response>
+            <response code="400">Parâmetros inválidos</response>
+            <response code="500">Erro interno</response>
+        </member>
+        <member name="M:AvaliacaoDev.Api.Controllers.ClienteController.Atualizar(System.Guid,AvaliacaoDev.Application.DTOs.ClienteDto)">
+            <summary>
+            Atualiza um cliente existente
+            </summary>
+            <param name="id">ID do cliente</param>
+            <param name="dto">Dados atualizados do cliente</param>
+            <returns>Resultado da operação</returns>
+            <response code="200">Cliente atualizado com sucesso</response>
+            <response code="400">Dados inválidos</response>
+            <response code="404">Cliente não encontrado</response>
+            <response code="500">Erro interno</response>
+        </member>
+        <member name="M:AvaliacaoDev.Api.Controllers.ClienteController.Deletar(System.Guid)">
+            <summary>
+            Remove um cliente do sistema
+            </summary>
+            <param name="id">ID do cliente a ser removido</param>
+            <returns>Resultado da operação</returns>
+            <response code="200">Cliente removido com sucesso</response>
+            <response code="404">Cliente não encontrado</response>
+            <response code="500">Erro interno</response>
+        </member>
+        <member name="T:AvaliacaoDev.Api.Controllers.PedidoController">
+            <summary>
+            Controller para gerenciamento de pedidos via API REST.
+            Expõe endpoints para operações CRUD e fluxo de pedidos.
+            </summary>
+        </member>
+        <member name="M:AvaliacaoDev.Api.Controllers.PedidoController.#ctor(AvaliacaoDev.Application.Interfaces.IPedidoService)">
+            <summary>
+            Construtor do controller com injeção de dependência
+            </summary>
+            <param name="service">Serviço de gerenciamento de pedidos</param>
+        </member>
+        <member name="M:AvaliacaoDev.Api.Controllers.PedidoController.Criar(System.Nullable{System.Guid})">
+            <summary>
+            Cria um novo pedido no sistema
+            </summary>
+            <param name="clienteId">ID opcional do cliente. Se não fornecido, usará cliente padrão</param>
+            <returns>ID do pedido criado</returns>
+            <response code="200">Pedido criado com sucesso</response>
+            <response code="400">Cliente informado não encontrado</response>
+            <response code="500">Erro interno</response>
+        </member>
+        <member name="M:AvaliacaoDev.Api.Controllers.PedidoController.Adicionar(System.Guid,AvaliacaoDev.Application.DTOs.ProdutoDto)">
+            <summary>
+            Adiciona um produto a um pedido existente
+            </summary>
+            <param name="id">ID do pedido</param>
+            <param name="dto">Dados do produto a ser adicionado</param>
+            <returns>Resultado da operação</returns>
+            <response code="200">Produto adicionado com sucesso</response>
+            <response code="400">Dados inválidos</response>
+            <response code="404">Pedido não encontrado</response>
+            <response code="500">Erro interno</response>
+        </member>
+        <member name="M:AvaliacaoDev.Api.Controllers.PedidoController.Remover(System.Guid,System.Guid)">
+            <summary>
+            Remove um produto de um pedido
+            </summary>
+            <param name="id">ID do pedido</param>
+            <param name="produtoId">ID do produto a ser removido</param>
+            <returns>Resultado da operação</returns>
+            <response code="200">Produto removido com sucesso</response>
+            <response code="400">Pedido fechado ou produto não encontrado</response>
+            <response code="404">Pedido não encontrado</response>
+            <response code="500">Erro interno</response>
+        </member>
+        <member name="M:AvaliacaoDev.Api.Controllers.PedidoController.Fechar(System.Guid)">
+            <summary>
+            Fecha um pedido, impedindo novas alterações
+            </summary>
+            <param name="id">ID do pedido a ser fechado</param>
+            <returns>Resultado da operação</returns>
+            <response code="200">Pedido fechado com sucesso</response>
+            <response code="400">Pedido não pode ser fechado</response>
+            <response code="404">Pedido não encontrado</response>
+            <response code="500">Erro interno</response>
+        </member>
+        <member name="M:AvaliacaoDev.Api.Controllers.PedidoController.Listar(System.Int32,System.Int32,System.String)">
+            <summary>
+            Lista pedidos com suporte a paginação e filtro
+            </summary>
+            <param name="page">Número da página (padrão: 1)</param>
+            <param name="pageSize">Tamanho da página (padrão: 10)</param>
+            <param name="status">Filtro opcional por status</param>
+            <returns>Lista de pedidos paginada</returns>
+            <response code="200">Lista de pedidos retornada com sucesso</response>
+            <response code="400">Parâmetros inválidos</response>
+            <response code="500">Erro interno</response>
+        </member>
+        <member name="M:AvaliacaoDev.Api.Controllers.PedidoController.Obter(System.Guid)">
+            <summary>
+            Obtém os dados completos de um pedido específico
+            </summary>
+            <param name="id">ID do pedido</param>
+            <returns>Dados completos do pedido</returns>
+            <response code="200">Pedido encontrado</response>
+            <response code="404">Pedido não encontrado</response>
+            <response code="500">Erro interno</response>
+        </member>
+    </members>
+</doc>

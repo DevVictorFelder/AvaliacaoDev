@@ -1,0 +1,15 @@
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Application\bin\Debug\net8.0\AvaliacaoDev.Application.deps.json
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Application\bin\Debug\net8.0\AvaliacaoDev.Application.dll
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Application\bin\Debug\net8.0\AvaliacaoDev.Application.pdb
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Application\bin\Debug\net8.0\AvaliacaoDev.Domain.dll
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Application\bin\Debug\net8.0\AvaliacaoDev.Domain.pdb
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Application\obj\Debug\net8.0\AvaliacaoDev.Application.csproj.AssemblyReference.cache
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Application\obj\Debug\net8.0\AvaliacaoDev.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Application\obj\Debug\net8.0\AvaliacaoDev.Application.AssemblyInfoInputs.cache
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Application\obj\Debug\net8.0\AvaliacaoDev.Application.AssemblyInfo.cs
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Application\obj\Debug\net8.0\AvaliacaoDev.Application.csproj.CoreCompileInputs.cache
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Application\obj\Debug\net8.0\Avaliaca.81C9C5AD.Up2Date
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Application\obj\Debug\net8.0\AvaliacaoDev.Application.dll
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Application\obj\Debug\net8.0\refint\AvaliacaoDev.Application.dll
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Application\obj\Debug\net8.0\AvaliacaoDev.Application.pdb
+C:\Users\victor.felder\Downloads\AvaliacaoDev\AvaliacaoDev.Application\obj\Debug\net8.0\ref\AvaliacaoDev.Application.dll
